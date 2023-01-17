@@ -1,0 +1,395 @@
+input, button {
+    border: none;
+}
+
+
+.btm__close {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    background: #ddd;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    font-family: '2', sans-serif;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+    z-index: 999;
+  }
+  
+  .btm__close.btm__close:hover i{
+  position: absolute;
+  top: 6px;
+  left: -80px;
+  font-size: 14px;
+  }
+
+
+
+.chat__wrap {
+    position: fixed;
+    bottom: 10px;
+    right: -300px;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    backdrop-filter: blur(20px);
+ background-color: #837c7c;
+    z-index: 99999999;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s right ease-in-out;
+    
+}
+
+.chat__wrap.open {
+  right:0
+}
+
+.chat__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: 800;
+    font-family: '2', sans-serif;
+    font-size: 22px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    padding-right: 35px;
+    color: #fff;
+    margin: 0 auto;
+    z-index: 9;
+    background: #131518;
+}
+
+.chat__body  {
+width: 100%;
+height: 60%;
+padding-top: 60px;
+padding-bottom: 70px;
+overflow-y: auto;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+
+
+
+.chat__body__item {
+    background: #434c5d;
+    color: rgb(198, 197, 197);
+    border-radius: 10px;
+    padding: 10px 18px;
+    padding-right: 40px;
+    margin: 5px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    justify-content: center
+}
+
+.chat__body__item:first-child {
+    margin-top: auto;
+
+} 
+
+.chat__body__item__user {
+  flex: auto;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 10px;
+}
+
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+
+.chat__body__item__client {
+  background: #00aeef;
+}
+
+.chat__body__item__time {
+    position: absolute;
+    bottom: 2px;
+    right: 6px;
+    font-size: 9px;
+}
+
+
+.chat__input {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #131518;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+
+.chat__input__message {
+flex: auto;
+}
+
+.chat__main__input {
+width: 100%;
+padding-top: 2.5px;
+padding-bottom: 2.5px;
+font-size: 14px;
+border-radius: 10px;
+padding-left: 10px;
+}
+
+.chat__input__submit {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+
+
+@media (max-width:768px) {
+    .chat__wrap {
+     bottom: auto;
+     top: 0;
+     right: -100%;
+     width: 100%;
+     height: 100%;
+     background: rgb(214, 214, 214);
+     z-index: 99999999;
+     box-shadow: none;
+     border-radius: 0;
+     }
+}
+
+body {
+    background-color: #00aeef;
+}
+
+
+
+p {
+    color: rgb(226, 171, 171);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+     border: 4;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .rounded-img6 {
+    width: 35%;
+    height: 35%;
+  }
+
+  body {
+	background-color: #9a9a9a;
+}
+
+.dertuz {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.srp {
+    background-color: #4f4f4f;
+    width: 960px;
+    height: 300px;
+    font-size: 29px;
+}
+
+h1:hover{
+    background-color: rgb(21, 32, 23);
+    transition: 2s ease;
+  }
+
+.srp:hover {
+    background-color: #000000;
+    transition: 2s ease;
+}
+
+.ccas:hover {
+    background-color: rgb(4, 4, 56);
+    transition: 4s ease;
+}
+
+.form-select {
+    width: 189px;
+    background-color: #283236;
+    height: 37px;
+}
+
+.form-select:-webkit-textfield-decoration-container {
+    left: auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #f2f2f2;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+	background: #FFCD48;
+}
+
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+	height: 100vh;
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+	min-height: 100vh;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+main .contenido .fecha {
+	font-size: 14px;
+	color: #B5B5B5;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #1D2F3D;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+}
